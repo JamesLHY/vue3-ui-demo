@@ -1,0 +1,35 @@
+<template>
+    <div>
+        Switch的文档
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+        <p>switch</p>
+    </div>
+</template>
