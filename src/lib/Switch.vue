@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="toggle" :class="{checked:value}"><span></span></button>
+        <button class="gulu-switch" @click="toggle" :class="{checked:value}"><span></span></button>
 
     </div>
 </template>
@@ -21,7 +21,7 @@
 <style lang="scss">
     $h: 22px;
     $h2: $h - 4px;
-    button {
+    .gulu-switch {
         height: $h;
         width: $h*2;
         border: none;
