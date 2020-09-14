@@ -3,7 +3,9 @@
     dialog的文档
     <h1>示例一</h1>
     <Button @click="toggle">toggle</Button>
-    <Dialog v-model:visible="x" :closeOnClickOverlay="true" :ok="f1" :cancel="f2"></Dialog>
+    <Dialog v-model:visible="x" :closeOnClickOverlay="true" :ok="f1" :cancel="f2">
+      <div>hi</div>
+    </Dialog>
   </div>
 </template>
 
