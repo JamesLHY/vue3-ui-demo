@@ -1,11 +1,9 @@
 <template>
     <div>
         <button class="gulu-switch" @click="toggle" :class="{checked:value}"><span></span></button>
-
     </div>
 </template>
 <script lang="ts">
-
     export default {
         props: {
             value: Boolean
@@ -15,7 +13,7 @@
                 context.emit('update:value', !props.value)
             }
             return {toggle}
-        }
+        },
     }
 </script>
 <style lang="scss">
@@ -39,6 +37,7 @@
             border-radius: $h2/2;
             transition: left .5s;
         }
+
         &.checked {
             background: blue;
 
@@ -51,7 +50,6 @@
             outline: none;
         }
     }
-
 
 
 </style>
