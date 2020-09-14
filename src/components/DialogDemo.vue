@@ -3,7 +3,7 @@
     dialog的文档
     <h1>示例一</h1>
     <Button @click="toggle">toggle</Button>
-    <Dialog :visible="x"></Dialog>
+    <Dialog v-model:visible="x" :closeOnClickOverlay="true" :ok="f1" :cancel="f2"></Dialog>
   </div>
 </template>
 
@@ -16,10 +16,14 @@ export default {
   components: { Dialog, Button },
   setup() {
     const x = ref(false);
-    const toggle =()=>{
-        x.value=!x.value
-    }
-    return { x ,toggle};
+    const toggle = () => {
+      x.value = !x.value;
+    };
+    const f1 = () => {
+      return false;
+    };
+    const f2 = () => {};
+    return { x, toggle, f1, f2 };
   },
 };
 </script>
