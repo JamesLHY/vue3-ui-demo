@@ -22,9 +22,10 @@
   </template>
 </template>
 
-</template>
+
 <script lang="ts">
 import Button from "./Button.vue";
+
 export default {
   props: {
    
@@ -59,9 +60,11 @@ export default {
       }
     };
     const cancel = () => {
+      props.cancel?.()
       close();
     };
-    return { close, closeOnClickOverlay, ok, cancel };
+   
+    return { close, closeOnClickOverlay, ok, cancel};
   },
 };
 </script>
