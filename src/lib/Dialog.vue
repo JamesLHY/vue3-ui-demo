@@ -1,14 +1,15 @@
 <template>
   <template v-if="visible">
-    <div class="gulu-dialog-overlay" @click="closeOnClickOverlay"></div>
+    <Teleport to="body">
+   <div class="gulu-dialog-overlay" @click="closeOnClickOverlay"></div>
     <div class="gulu-dialog-wrapper">
       <div class="gulu-dialog">
         <header>
-          {{title}}
+         <slot name="title"/>
           <span class="gulu-dialog-close" @click="close"></span>
         </header>
         <main>
-         <slot/>
+         <slot name="content"/>
         </main>
         <footer>
           <Button level="main" @click="ok">OK</Button>
@@ -16,6 +17,8 @@
         </footer>
       </div>
     </div>
+    </Teleport>
+ 
   </template>
 </template>
 
@@ -24,10 +27,7 @@
 import Button from "./Button.vue";
 export default {
   props: {
-    title:{
-      type:String,
-      default:'提示'
-    },
+   
     visible: {
       type: Boolean,
       default: false,
